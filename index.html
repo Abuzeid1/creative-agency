@@ -1,69 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./index.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="landing page for creative agency" />
+
+    <link rel="stylesheet" href="./index.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap"
+      rel="preload"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript>
+      <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap"
+        rel="stylesheet"
+      />
+    </noscript>
+
     <title>Creative Agency</title>
-</head>
-<body>
-    <header>
-        <div class="logo">
-            Creative Agency
-        </div>
-        <div class="toggle">
+  </head>
+  <body>
+    <main class="container">
+      <header>
+        <div class="logo">Creative Agency</div>
+        <div class="toggle"></div>
+        <nav class="navigation">
+          <ul>
+            <li><a href="index.html">Home</a></li>
 
-        </div>
-        <div class="navigation">
+            <li><a href="services.min.html">Service</a></li>
+
+            <li><a href="work.min.html">Work</a></li>
+
+            <li><a href="contact.min.html">Contact</a></li>
+          </ul>
+          <div class="social-bar">
             <ul>
-                <li><a href="index.html">Home</a></li>
-            
-                <li><a href="services.html">Service</a></li>
-            
-                <li><a href="work.html">Work</a></li>
-            
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-            <div class="social-bar">
-
-            
-                <ul>
-                    <li>
-                        <a href="http://facebook.com" target="_blank">
-                        <img src="./images/facebook.png">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="http://twitter.com" target="_blank">
-                        <img src="./images//twitter.png">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="http://instagram.com" target="_blank">
-                        <img src="./images/instagram.png">
-                        </a>
-                    </li>
-                </ul>
-                <a href="mailto:" class="email-icon">
-                    <img src="./images/email.png" alt="">
+              <li>
+                <a href="http://facebook.com" target="_blank">
+                  <img
+                    src="./images/facebook.webp"
+                    alt="our facebook account"
+                  />
                 </a>
-            </div>
-        </div>
-    </header>
+              </li>
+              <li>
+                <a href="http://twitter.com" target="_blank">
+                  <img src="./images//twitter.webp" alt="our twitter account" />
+                </a>
+              </li>
+              <li>
+                <a href="http://instagram.com" target="_blank">
+                  <img
+                    src="./images/instagram.webp"
+                    alt="our instagram account"
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="mailto:" class="email-icon">
+                  <img src="./images/email.webp" alt="our email" />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
 
-    <section>
-        <img src="./images/home-img.jpg" alt="" class="home-img">
+      <section class="section home">
+        <img src="./images/home-img.webp" alt="" class="home-img" />
         <div class="home-content">
-            <h1>We help to achieve <br> your goals.</h1>
-            <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum laboriosam eum minima possimus dolorum dolorem! Corporis in dignissimos autem cum porro at libero voluptate ducimus exercitationem asperiores.
-            </p>
-            <a href="contact.html" class="btn">Get Started</a>
+          <h1>
+            We help to achieve <br />
+            your goals.
+          </h1>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum
+            laboriosam eum minima possimus dolorum dolorem! Corporis in
+            dignissimos autem cum porro at libero voluptate ducimus
+            exercitationem asperiores.
+          </p>
+          <a href="contact.html" class="btn">Get Started</a>
         </div>
-        
-    </section>
-
-    <script src="./index.js"></script>
-</body>
+      </section>
+    </main>
+    <script defer src="./index.js"></script>
+  </body>
 </html>
