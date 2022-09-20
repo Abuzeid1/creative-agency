@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "parcel": "^2.7.0"
+  },
+  "source": "src/index.html",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "devDependencies": {
+    "posthtml-doctype": "^1.1.1",
+    "posthtml-include": "^1.7.4",
+    "sharp": "^0.29.3"
+  }
+}

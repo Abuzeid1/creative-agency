@@ -1,0 +1,82 @@
+@import url(./header.css);
+
+/* contact */
+.contact-section {
+  margin-top: 2rem;
+}
+.contact-section p {
+  max-width: 75ch;
+}
+.contact {
+  margin-top: 3rem;
+  width: min(95%, 100rem);
+}
+
+@media (min-width: 720px) {
+  .contact {
+    display: grid;
+    grid-template-columns: 1fr max(20rem, 30%);
+    gap: 4rem;
+  }
+}
+.contact-form {
+  padding: 3.75rem 2.5rem 1.25rem;
+  background-color: #f9f9f9;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(max(10rem, 45%), 1fr));
+  row-gap: 1rem;
+  column-gap: 2%;
+}
+
+.contact-form :is(textarea, input) {
+  color: #111;
+  background: transparent;
+  padding: 0.675rem;
+  font-size: 1rem;
+  font-weight: 300;
+  margin: 0.675rem 0;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+.contact-form textarea {
+  grid-column: 1/-1;
+  height: 10rem;
+}
+.contact-form :last-child {
+  grid-column: 1/-1;
+  background: #1b206e;
+  color: #fff;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+}
+.contact-info {
+  margin-top: 2rem;
+  color: #1b206e;
+  padding: 3.75rem 2.5rem;
+  background-color: #f9f9f9;
+}
+.info-box {
+  display: grid;
+  grid-template-columns: 1.25rem 1fr;
+  column-gap: 1rem;
+  row-gap: 1rem;
+  padding: 1.25rem 0;
+}
+.info-box img {
+  width: 100%;
+}
+.info-box :is(p, a) {
+  color: #111;
+  text-decoration: none;
+  grid-column: 2;
+  margin: 0;
+  max-width: 17ch;
+}
+@media (min-width: 720px) {
+  .contact-info {
+    margin-top: 0;
+  }
+}

@@ -1,0 +1,32 @@
+@import url(./header.css);
+/* home css */
+
+.container {
+  height: 100vh;
+}
+.home-img {
+  height: 100%;
+  z-index: 1;
+
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.home-content {
+  z-index: 2;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  translate: 0 -50%;
+}
+h1 {
+  max-width: 17ch;
+}
+.home-content p {
+  max-width: 45ch;
+}
+@media (max-width: 1080px) {
+  .home-img {
+    display: none;
+  }
+}
